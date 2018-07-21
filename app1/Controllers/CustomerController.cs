@@ -4,19 +4,32 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using app1.Models;
+using System.Data.Entity;
 
 namespace app1.Controllers
 {
     public class CustomerController : Controller
     {
-        public ActionResult Index()
+        private DBmodel _context;
+        public CustomerController()
         {
-            return Content("Hello");
+            _context = new DBmodel();
+        }
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+        public ViewResult Index()
+        {
+            var viewdata = new ViewModels.RandomMovieViewModel();
+            viewdata.Customers = _context.Customers.ToList();
+            
+            return View(viewdata);
         }
         // GET: Customer
         public ActionResult Details(int id)
         {
-            var Customer = GetCustomers().SingleOrDefault(h => h.Id == id);
+            var Customer = _context.Customers.SingleOrDefault(h => h.Id == id);
             if (Customer == null)
             {
                 return HttpNotFound();
@@ -24,13 +37,13 @@ namespace app1.Controllers
             return View(Customer);
         }
 
-        private IEnumerable<Customer> GetCustomers()
-        {
-            return new List<Customer>
-            {
-                new Customer {Gender=1,Id=1,Name="Mehdi"},
-                new Customer { Gender = 0 , Id = 2, Name = "Narges" }
-            };
-        }
+        //private IEnumerable<Customer> GetCustomers()
+        //{
+        //    return new List<Customer>
+        //    {
+        //        new Customer {Gender=1,Id=1,Name="Mehdi"},
+        //        new Customer { Gender = 0 , Id = 2, Name = "Narges" }
+        //    };
+        //}
     }
 }

@@ -22,7 +22,7 @@ namespace app1.Controllers
         public ViewResult Index()
         {
             var viewdata = new ViewModels.RandomMovieViewModel();
-            viewdata.Customers = _context.Customers.ToList();
+            viewdata.Customers = _context.Customers.Include(c => c.MemberShipType).ToList();
             
             return View(viewdata);
         }

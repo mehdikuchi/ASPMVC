@@ -30,13 +30,12 @@
 <ul>
     <li>
         Membership Type: @memtype
-    </li>
+    </li>           
+    @if (Model.BirthDate.HasValue)
+    {
     <li>
-        DOB:
-        @if (Model.BirthDate.HasValue)
-        {
-            <text>@Model.BirthDate.ToString()</text>
-        }
+        <text>DOB: @Model.BirthDate.ToString()</text>
     </li>
+    }    
 </ul>
 

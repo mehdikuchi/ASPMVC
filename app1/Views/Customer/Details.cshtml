@@ -5,4 +5,38 @@
 }
 
 <h2>@Model.Name</h2>
+@{
+    var memtype = "";
+}
+@switch (Model.MembershipTypeId)
+{
+    case 1:
+        memtype = "Pay as you go";
+        break;
+    case 2:
+        memtype = "Monthly";
+        break;
+    case 3:
+        memtype = "Quarterly";
+        break;
+    case 4:
+        memtype = "annualy";
+        break;
+    default:
+        memtype = "Pay as you go";
+        break;
+}
+
+<ul>
+    <li>
+        Membership Type: @memtype
+    </li>
+    <li>
+        DOB:
+        @if (Model.BirthDate.HasValue)
+        {
+            <text>@Model.BirthDate.ToString()</text>
+        }
+    </li>
+</ul>
 

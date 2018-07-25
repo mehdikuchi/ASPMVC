@@ -29,12 +29,12 @@ namespace app1.Controllers
         // GET: Customer
         public ActionResult Details(int id)
         {
-            var Customer = _context.Customers.SingleOrDefault(h => h.Id == id);
-            if (Customer == null)
+            var viewdata = _context.Customers.SingleOrDefault(h => h.Id == id);            
+            if (viewdata == null)
             {
                 return HttpNotFound();
-            }
-            return View(Customer);
+            }            
+            return View(viewdata);
         }
 
         //private IEnumerable<Customer> GetCustomers()

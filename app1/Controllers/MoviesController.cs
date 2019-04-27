@@ -11,9 +11,16 @@ namespace app1.Controllers
     public class MoviesController : Controller
     {
         // GET: Movies
-        public ActionResult Random()
+        private DBmodel db;
+        public MoviesController() {
+            db = new DBmodel();
+        }
+        protected override void Dispose(bool disposing)
         {
-            DBmodel db = new DBmodel();
+            db.Dispose();
+        }
+        public ActionResult Random()
+        {            
             var movie = new Movie()
             {
                 Name = "Shrek"

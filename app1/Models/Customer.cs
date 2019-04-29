@@ -15,7 +15,7 @@ namespace app1.Models
         public int Gender { get; set; }        
         public bool IsSubscribedToNewsletter { get; set; }
         public MemberShipType MemberShipType { get; set; }// A navigation property    
-        public byte MembershipTypeId { get; set; }//by convetion it will be regarded as for end key by entity framework        
+        public byte MembershipTypeId { get; set; }//by convetion it will be regarded as foriegn key by entity framework        
         public DateTime? BirthDate { get; set; }
     }
 }

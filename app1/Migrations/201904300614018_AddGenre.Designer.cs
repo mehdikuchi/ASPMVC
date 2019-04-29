@@ -7,13 +7,13 @@ namespace app1.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Movielist : IMigrationMetadata
+    public sealed partial class AddGenre : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Movielist));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddGenre));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904291604237_Movielist"; }
+            get { return "201904300614018_AddGenre"; }
         }
         
         string IMigrationMetadata.Source

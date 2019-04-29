@@ -190,9 +190,13 @@
     <Compile Include="Migrations\201807251531218_BirthDateAddedToCustomer.Designer.cs">
       <DependentUpon>201807251531218_BirthDateAddedToCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904291604237_Movielist.cs" />
-    <Compile Include="Migrations\201904291604237_Movielist.Designer.cs">
-      <DependentUpon>201904291604237_Movielist.cs</DependentUpon>
+    <Compile Include="Migrations\201904300611168_AddPropertiesToMovies.cs" />
+    <Compile Include="Migrations\201904300611168_AddPropertiesToMovies.Designer.cs">
+      <DependentUpon>201904300611168_AddPropertiesToMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904300614018_AddGenre.cs" />
+    <Compile Include="Migrations\201904300614018_AddGenre.Designer.cs">
+      <DependentUpon>201904300614018_AddGenre.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -290,8 +294,11 @@
     <EmbeddedResource Include="Migrations\201807251531218_BirthDateAddedToCustomer.resx">
       <DependentUpon>201807251531218_BirthDateAddedToCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904291604237_Movielist.resx">
-      <DependentUpon>201904291604237_Movielist.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904300611168_AddPropertiesToMovies.resx">
+      <DependentUpon>201904300611168_AddPropertiesToMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904300614018_AddGenre.resx">
+      <DependentUpon>201904300614018_AddGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

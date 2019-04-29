@@ -20,28 +20,22 @@ namespace app1.Controllers
             db.Dispose();
         }
         public ActionResult Random()
-        {            
+        {
+
             var movie = new Movie()
             {
                 Name = "Shrek"
-            };
-            db.Movies.Add(movie);
-            db.SaveChanges();
+            };            
             var customers = new List<Customer>
             {
                 new Customer{Name = "Ali"},
                 new Customer{Name="Mehdi"}
-            };
-            foreach(var cust in customers)
-            {
-                db.Customers.Add(cust);
-            }
-            db.SaveChanges();
+            };           
             var viewdata = new RandomMovieViewModel()
             {
                 Movie = movie,
                 Customers = customers
-            };
+            };            
             return View(viewdata);
             //return Content("Hello World");
             //return HttpNotFound();

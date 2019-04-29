@@ -194,6 +194,10 @@
     <Compile Include="Migrations\201904291604237_Movielist.Designer.cs">
       <DependentUpon>201904291604237_Movielist.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904291907220_AddGenreType.cs" />
+    <Compile Include="Migrations\201904291907220_AddGenreType.Designer.cs">
+      <DependentUpon>201904291907220_AddGenreType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\DBmodel.cs" />
@@ -292,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904291604237_Movielist.resx">
       <DependentUpon>201904291604237_Movielist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904291907220_AddGenreType.resx">
+      <DependentUpon>201904291907220_AddGenreType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

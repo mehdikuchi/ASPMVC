@@ -13,7 +13,7 @@ namespace app1.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201904300614018_AddGenre"; }
+            get { return "201904300724267_AddGenre"; }
         }
         
         string IMigrationMetadata.Source

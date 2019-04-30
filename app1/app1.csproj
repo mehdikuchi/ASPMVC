@@ -194,9 +194,9 @@
     <Compile Include="Migrations\201904300611168_AddPropertiesToMovies.Designer.cs">
       <DependentUpon>201904300611168_AddPropertiesToMovies.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904300614018_AddGenre.cs" />
-    <Compile Include="Migrations\201904300614018_AddGenre.Designer.cs">
-      <DependentUpon>201904300614018_AddGenre.cs</DependentUpon>
+    <Compile Include="Migrations\201904300724267_AddGenre.cs" />
+    <Compile Include="Migrations\201904300724267_AddGenre.Designer.cs">
+      <DependentUpon>201904300724267_AddGenre.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -297,8 +297,8 @@
     <EmbeddedResource Include="Migrations\201904300611168_AddPropertiesToMovies.resx">
       <DependentUpon>201904300611168_AddPropertiesToMovies.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904300614018_AddGenre.resx">
-      <DependentUpon>201904300614018_AddGenre.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904300724267_AddGenre.resx">
+      <DependentUpon>201904300724267_AddGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

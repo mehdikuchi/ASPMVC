@@ -198,6 +198,10 @@
     <Compile Include="Migrations\201904300724267_AddGenre.Designer.cs">
       <DependentUpon>201904300724267_AddGenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904300729170_PopulateGenres.cs" />
+    <Compile Include="Migrations\201904300729170_PopulateGenres.Designer.cs">
+      <DependentUpon>201904300729170_PopulateGenres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\DBmodel.cs" />
@@ -299,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904300724267_AddGenre.resx">
       <DependentUpon>201904300724267_AddGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904300729170_PopulateGenres.resx">
+      <DependentUpon>201904300729170_PopulateGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
